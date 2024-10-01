@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      /*
       drawer: Drawer(
         child: ListView(
           children: [
@@ -27,6 +28,7 @@ class HomePage extends StatelessWidget{
           IconButton(onPressed: (){Navigator.pushNamed(context, 'profile');}, icon: Icon(Icons.account_circle, color: Colors.red,))
         ],
       ),
+       */
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.blueAccent,
         color: Colors.indigo,
@@ -47,7 +49,7 @@ class HomePage extends StatelessWidget{
 
         children: [
 
-          //HomeAppBar(),
+          HomeAppBar(),
           Container(padding: EdgeInsets.all(2),
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
