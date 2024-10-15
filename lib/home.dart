@@ -89,6 +89,55 @@ class HomePage extends StatelessWidget{
             ),
           ),
           Container(
+          margin: EdgeInsets.symmetric(vertical: 5,horizontal: 5),
+          width: double.infinity,
+          height: 170,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: kBannerColor,
+          ),
+          child: Stack(
+            children: [
+              Positioned(
+                  top:30,
+                  left: 15,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Look The Item \nRecipe at home',
+                        style: TextStyle(
+                            height: 1.1,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22
+                        ),
+                      ),
+                      SizedBox(height: 10,),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 33
+                            ),
+                            backgroundColor: Colors.white,
+                            elevation: 0
+                        ),
+                        onPressed: (){},
+                        child: Text('Explore',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),),
+
+                      ),
+                    ],
+                  )),
+              Positioned(
+                  top:0,
+                  bottom: 0,
+                  right: -20,
+                  child: Image.network("https://pngimg.com/d/chef_PNG190.png",fit: BoxFit.cover,)
+              )
+            ],
+          ),
+          ),
+          Container(
             margin: EdgeInsets.fromLTRB(10, 20, 10, 10),
             child: Text(
               'Category',
